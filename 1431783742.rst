@@ -1,0 +1,129 @@
+1431783742
+##############
+
+:date: 2015-05-16 07:42:22-06:00 
+:tags: journal 
+:category: journal 
+:slug: 1431783742 
+:authors: Raul Ascencio 
+
+
+Rust
+----
+
+* _let_ makes variable bindings.
+* _let_ define is a _pattern_.
+* Type is _infered_.
+* Type can be added next to a _colon(':')_ after the variable name.
+* For binding mutability use _mut_ after _let_.
+* Variable binding is required. A variable must have a value from the beginning.
+* String interpolation is made through curly braces '{}'.
+* String interpolation works similar to the python  str#format.
+* Functions arguments needs type to be declared.
+* Unlike other languages where an assignment evaluates to the assigned value
+  (e.g. 5 in the previous example), in Rust the value of an assignment is an
+  empty tuple ()
+* Arrays have a generic notation, [T;N], where T is the type and N the number of element of the array.
+* Slices are different from Arrays (&[T]).
+* Tuples are heterogeneous 
+* Tuple indexing : tuple.0 first tuple value, tuple.1 second...
+* Using a return as the last line of a function works, but is considered poor style
+* The type of () is simply () and it's usually called the unit type. 
+  * No. There is no unit type (anymore).
+* The compiler 'never' "confuses" a type with an expression.
+* Doc comment, are denoted by "///" and supports Markdown notation.
+* Rust have something similar to python doctest, rustdoc 
+  * In doc comments you could write markdown code blocks (```). 
+  * For the code inside code blocks, rust wrapt it inside a main() function.
+  * Lines starting with '#' will be hidden, but used when compiling.
+  * Code block ignore (```ignore), ignores the code.
+  * Code block no_run (```no_run), will compile the code, but not run it.
+  * Code block should_panic (```should_panic), compile, run but don't test it. 
+  * helpful macros: assert_eq!, panic!, assert!
+* _if_ can be used with _let_ to build ternary expressions.
+* _if_, _for_ don't use parentheses () to evaluate expressions.
+* Ranges are defined with datum'..'datum as 0..10.
+* For loops manages _iterators_.
+* _continue_ keyword goes to the next iteration.
+* Ownership, there can be only one binding to a resource. You move stuff when
+  you say a = vec![1]; b = a, you are moving the pointer of vec![1] to b, so a
+  is left with 'nothing'.
+* Primitive types implements the _trait_ _Copy_ by default.
+* Borrowing, instead of moving pointer you make references of them, with _&_,
+  but returns it after the scope is out.
+* Mutable references can be made with _&_ _mut_ but only the last one can be used
+  under the same scope.
+* References has to be declared after the variable it refers to. 
+* Lifetimes, scope names ?, can be used in functions, and required with structures. 
+  * reference of a variable can only live within the scope of the variable it refers.
+  * Life time are defined as &'scope_name, with mutable you just add the _mut_ keyword before the type.
+  * 'static, lifetime lives through the entire program lifetime. 
+* Lifetime Elision (elision: the omission of one or more sound).
+  * Every arguments accepting a reference in a function or structure, needs a defined lifetime, rust does this automatically when possible.
+  * It has three rules 
+    + Each elided lifetime in a function’s arguments becomes a distinct
+      lifetime parameter.  
+    + If there is exactly one input lifetime, elided or not, that lifetime is
+      assigned to all elided lifetimes in the return values of that function.
+    + If there are multiple input lifetimes, but one of them is &self or &mut
+      self, the lifetime of self is assigned to all elided output lifetimes.
+
+* Keyword _mut_ is part of a pattern.
+* Mutability is a property of either a borrow (&mut) or a binding (let mut). 
+* The mutability of a struct is in its binding.
+* You may have one or the other of these two kinds of borrows, but not both at the same time
+* There is one case when a tuple struct is very useful, though, and that’s a tuple struct with only one element.
+   + We call this the ‘newtype’ pattern, because it allows you to create a new
+     type, distinct from that of its contained value and expressing its own
+     semantic meaning
+* You should prefer struct to tuple structs.
+* Enums, defined multiple variants, you could Tuple structs, Structs, unit like structs, primitive types and so on...
+* You can't simply try to destructure a value as if it were one of the possible variants.
+* _match_ is like the classical switch, you don't put _case_ but _=>_ followed by an expression.
+  * Where '_' works like the 'default' keyword, an rust knows when it can be
+    required, for example for integers, you have to set it.
+  * _match_ can be used to compare variants of  enums.
+   * You can use ranges(...), binding (@) and multiple (|) values with match.
+  * _match_ can be conditional, you can use an 'if' after the value definition (Guard).
+* If you have a compound data type, like a struct, you can destructure it
+  inside of a pattern, it works with any compound data.
+* As in python methods could take an special first parameter, self.
+* Method chaining can be achieved by returning the self type.
+* Functions associated with struct that does not receive self as argument, are
+  static methods and are called ‘associated function’
+* Rust doesn't have method overloading, named arguments, or variable arguments
+* BuilderPatter, you make an struct with the all or some properties of the "to
+  build" struct, then defined a method for each of them and in those the
+  returning value must be 'self', and name a method called finalize or build
+  which will return the desired struct.
+* &str are statically allocated, Stirng is heap allocated.
+  * &str#to_string() -> String
+  * Strings coerce to &str.
+  * strings, do not support indexing, but we can get an iterable of it bytes
+    (as_bytes()) or chars (as_chars()).
+  * When concatenating Strings, since they're heap allocated, the concatenated
+    string needs to be referenced.
+* Rust has generics.
+  * Generics don’t have to only be generic over one type.
+  * The capital letters can be any letter we could like.
+  * There can be generic enums, structs and functions.
+* _impl_ keyword is used to call function with method syntax.
+* _trait_s are something like _interfaces_
+ * You call them like this impl TraitName for TypeName 
+ * Generics arguments can be defined a trait with :, T: Trait.
+ * Traits can implemented for any type 
+ * To be used traits needs to be defined under the scope.
+ * Either the trait or the type you're writing the impl for must be defined by you.
+ * For multiple trait there's +.
+ * Prefer where when using multiple generics and traits.
+   * _where_ allows bounds where the left-hand side is an arbitrary type
+ * You can have default methods!  (implement methods inside the trait
+   declaration).
+ * A trait can inherit other trait.
+   * When implementing on a type, both traits needs to be called.
+* Values are deallocated from top to bottom. 
+* The trait Drop can be used to clean up stuff before the Type goes out of scope.
+* Combining if and let together to reduce the overhead of certain kinds of
+  pattern matches, while can alsoe be combined with let.
+* Traits can be passed as arguments, erasing the need for a Type, this is called "Dynamic dispatch". fn(&TraitName).
+* 
