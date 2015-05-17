@@ -5,7 +5,7 @@ cat << EOF > $DATE.rst
 $DATE
 ##############
 
-:date: $(date --rfc-33339='ns') 
+:date: $(date --rfc-3339='seconds') 
 :tags: journal 
 :category: journal 
 :slug: $DATE 
