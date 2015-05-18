@@ -92,7 +92,7 @@ Rust
 * You may have one or the other of these two kinds of borrows, but not both at the same time
 * There is one case when a tuple struct is very useful, though, and that’s a tuple struct with only one element.
 
-   * We call this the ‘newtype’ pattern, because it allows you to create a new
+  * We call this the ‘newtype’ pattern, because it allows you to create a new
      type, distinct from that of its contained value and expressing its own
      semantic meaning
      
