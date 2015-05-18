@@ -136,7 +136,7 @@ Rust
   * There can be generic enums, structs and functions.
   
 * *impl* keyword is used to call function with method syntax.
-* *trait*s are something like *interfaces* :
+* *trait* s are something like *interfaces* :
 
  * You call them like this impl TraitName for TypeName.
  * Generics arguments can be defined a trait with :, T: Trait.
