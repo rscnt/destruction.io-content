@@ -11,11 +11,11 @@
 Rust
 ----
 
-* _let_ makes variable bindings.
-* _let_ define is a _pattern_.
-* Type is _infered_.
-* Type can be added next to a _colon(':')_ after the variable name.
-* For binding mutability use _mut_ after _let_.
+* *let* makes variable bindings.
+* *let* defines is a *pattern*.
+* Type is *infered*.
+* Type can be added next to a *colon(':')* after the variable name.
+* For binding mutability use *mut* after *let*.
 * Variable binding is required. A variable must have a value from the beginning.
 * String interpolation is made through curly braces '{}'.
 * String interpolation works similar to the python  str#format.
@@ -23,68 +23,92 @@ Rust
 * Unlike other languages where an assignment evaluates to the assigned value
   (e.g. 5 in the previous example), in Rust the value of an assignment is an
   empty tuple ()
-* Arrays have a generic notation, [T;N], where T is the type and N the number of element of the array.
+* Arrays have a generic notation, [T;N], where T is the type and N the 
+  number of element of the array.
 * Slices are different from Arrays (&[T]).
 * Tuples are heterogeneous 
 * Tuple indexing : tuple.0 first tuple value, tuple.1 second...
 * Using a return as the last line of a function works, but is considered poor style
 * The type of () is simply () and it's usually called the unit type. 
+
   * No. There is no unit type (anymore).
 * The compiler 'never' "confuses" a type with an expression.
 * Doc comment, are denoted by "///" and supports Markdown notation.
-* Rust have something similar to python doctest, rustdoc 
-  * In doc comments you could write markdown code blocks (```). 
+
+* Rust have something similar to python doctest, rustdoc.
+
+  * In doc comments you could write markdown code blocks. 
   * For the code inside code blocks, rust wrapt it inside a main() function.
   * Lines starting with '#' will be hidden, but used when compiling.
-  * Code block ignore (```ignore), ignores the code.
-  * Code block no_run (```no_run), will compile the code, but not run it.
-  * Code block should_panic (```should_panic), compile, run but don't test it. 
+  * Code block ignore, ignores the code.
+  * Code block no_run, will compile the code, but not run it.
+  * Code block should_panic (should_panic), compile, run but don't test it. 
   * helpful macros: assert_eq!, panic!, assert!
-* _if_ can be used with _let_ to build ternary expressions.
-* _if_, _for_ don't use parentheses () to evaluate expressions.
+
+* *if* can be used with *let* to build ternary expressions.
+
+* *if*, *for* don't use parentheses () to evaluate expressions.
+
 * Ranges are defined with datum'..'datum as 0..10.
-* For loops manages _iterators_.
-* _continue_ keyword goes to the next iteration.
+
+* For loops manages *iterators*.
+* *continue* keyword goes to the next iteration.
 * Ownership, there can be only one binding to a resource. You move stuff when
   you say a = vec![1]; b = a, you are moving the pointer of vec![1] to b, so a
   is left with 'nothing'.
-* Primitive types implements the _trait_ _Copy_ by default.
-* Borrowing, instead of moving pointer you make references of them, with _&_,
+* Primitive types implements the *trait* *Copy* by default.
+* Borrowing, instead of moving pointer you make references of them, with *&*,
   but returns it after the scope is out.
-* Mutable references can be made with _&_ _mut_ but only the last one can be used
+* Mutable references can be made with *& mut* but only the last one can be used
   under the same scope.
 * References has to be declared after the variable it refers to. 
 * Lifetimes, scope names ?, can be used in functions, and required with structures. 
+
   * reference of a variable can only live within the scope of the variable it refers.
-  * Life time are defined as &'scope_name, with mutable you just add the _mut_ keyword before the type.
+  * Life time are defined as *&'scope_name*, with mutable you just add the *mut* keyword before the type.
   * 'static, lifetime lives through the entire program lifetime. 
+  
 * Lifetime Elision (elision: the omission of one or more sound).
-  * Every arguments accepting a reference in a function or structure, needs a defined lifetime, rust does this automatically when possible.
-  * It has three rules 
-    + Each elided lifetime in a function’s arguments becomes a distinct
-      lifetime parameter.  
-    + If there is exactly one input lifetime, elided or not, that lifetime is
-      assigned to all elided lifetimes in the return values of that function.
-    + If there are multiple input lifetimes, but one of them is &self or &mut
-      self, the lifetime of self is assigned to all elided output lifetimes.
+
+  * Every arguments accepting a reference in a function or structure, needs a
+    defined lifetime, rust does this automatically when possible.
+  
+  * It has three rules:
+  
+    * Each elided lifetime in a function’s arguments becomes a 
+      distinct lifetime parameter.  
+      
+    * If there is exactly one input lifetime, elided or not, that 
+      lifetime is assigned to all elided lifetimes in the return values 
+      of that function.
+      
+    * If there are multiple input lifetimes, but one of 
+      them is &self or &mut self, the lifetime of self is assigned to 
+      all elided output lifetimes.
 
 * Keyword _mut_ is part of a pattern.
 * Mutability is a property of either a borrow (&mut) or a binding (let mut). 
 * The mutability of a struct is in its binding.
 * You may have one or the other of these two kinds of borrows, but not both at the same time
 * There is one case when a tuple struct is very useful, though, and that’s a tuple struct with only one element.
-   + We call this the ‘newtype’ pattern, because it allows you to create a new
+
+   * We call this the ‘newtype’ pattern, because it allows you to create a new
      type, distinct from that of its contained value and expressing its own
      semantic meaning
+     
 * You should prefer struct to tuple structs.
 * Enums, defined multiple variants, you could Tuple structs, Structs, unit like structs, primitive types and so on...
 * You can't simply try to destructure a value as if it were one of the possible variants.
-* _match_ is like the classical switch, you don't put _case_ but _=>_ followed by an expression.
+* *match* is like the classical switch, you don't put *case* but *=>* followed by an expression.
+
   * Where '_' works like the 'default' keyword, an rust knows when it can be
     required, for example for integers, you have to set it.
-  * _match_ can be used to compare variants of  enums.
+  * *match* can be used to compare variants of  enums.
+  
    * You can use ranges(...), binding (@) and multiple (|) values with match.
-  * _match_ can be conditional, you can use an 'if' after the value definition (Guard).
+   
+  * *match* can be conditional, you can use an 'if' after the value definition (Guard).
+  
 * If you have a compound data type, like a struct, you can destructure it
   inside of a pattern, it works with any compound data.
 * As in python methods could take an special first parameter, self.
@@ -97,19 +121,22 @@ Rust
   returning value must be 'self', and name a method called finalize or build
   which will return the desired struct.
 * &str are statically allocated, Stirng is heap allocated.
+
   * &str#to_string() -> String
   * Strings coerce to &str.
   * strings, do not support indexing, but we can get an iterable of it bytes
     (as_bytes()) or chars (as_chars()).
   * When concatenating Strings, since they're heap allocated, the concatenated
     string needs to be referenced.
+    
 * Rust has generics.
+
   * Generics don’t have to only be generic over one type.
   * The capital letters can be any letter we could like.
   * There can be generic enums, structs and functions.
-* _impl_ keyword is used to call function with method syntax.
-
-* _trait_s are something like _interfaces_ :
+  
+* *impl* keyword is used to call function with method syntax.
+* *trait*s are something like *interfaces* :
 
  * You call them like this impl TraitName for TypeName.
  * Generics arguments can be defined a trait with :, T: Trait.
@@ -118,10 +145,11 @@ Rust
  * Either the trait or the type you're writing the impl for must be defined by you.
  * For multiple trait there's +.
  * Prefer where when using multiple generics and traits.
-   * _where_ allows bounds where the left-hand side is an arbitrary type
+   * *where* allows bounds where the left-hand side is an arbitrary type
  * You can have default methods!  (implement methods inside the trait
    declaration).
  * A trait can inherit other trait.
+ 
    * When implementing on a type, both traits needs to be called.
 
 * Values are deallocated from top to bottom. 
@@ -129,25 +157,28 @@ Rust
 * Combining if and let together to reduce the overhead of certain kinds of
   pattern matches, while can alsoe be combined with let.
 * Traits can be passed as arguments, erasing the need for a Type, this is
-  called "Dynamic dispatch". fn(&TraitName).
+  called "Dynamic dispatch". *fn(&TraitName)*.
 * Closures starts  with two pipes | x | args go between them, multiline closures use braces {}.
-  * The concept of ownership also applies for closures.
-    * Keyword _move_, can be used to take ownership of a copy |  they give a
+
+  + The concept of ownership also applies for closures.
+  
+    - Keyword *move*, can be used to take ownership of a copy |  they give a
       closure its own stack frame.
-    * Closures are traits, Fn<Args>(&self), FnMut<Args>(&mut self),
+    - Closures are traits, Fn<Args>(&self), FnMut<Args>(&mut self),
       FnOnce<Args>(self), and like any trait they can be passed as arguments
-      to functions, rememer to use where to define the type of the _Args_.
-    * Dynamic dispatch can be achieved using _&_ in the definition of the
+      to functions, rememer to use where to define the type of the *Args*.
+    - Dynamic dispatch can be achieved using *&* in the definition of the
       closure argument and when passing the closure. 
-    * In order to return closures, we need to return a reference of the trait.
+    - In order to return closures, we need to return a reference of the trait.
       ( -> &'static (Fn(i32) -> Vec<i32> ) ), without arguments there will be
       no lifetime elision and references needs a lifetime, so we use 'static.
-    * Returned closures needs to be _Boxed_ (to give it a size) and _moved_ to
+    - Returned closures needs to be *Boxed* (to give it a size) and *moved* to
       a new stack frame.
+      
 * In order to return something from a function, Rust needs to know what size 
   the return type is. 
 * References needs a lifetime.
-* We can call traits methods directly as _Trait::method(args) which is a
+* We can call traits methods directly as *Trait::method(args)* which is a
   shorthand for <Type as Trait>::method(args);
 * 'crate'  -> package, library.
 * Declare modules in lib.rs, rust will expect a module_name.rs or module_name/mod.rs.
@@ -164,43 +195,47 @@ Rust
 * Using mut static is _unsafe_. 
 * Attributes instructions for the compiler, #[] applies to the next item and
   #![] applies to the enclosing item.
-* _type_ keyword lets you declare an alias of another type.
-* _as_ keyword is used for scalar cast.
-* _transmute_ it tells Rust to treat a value of one type as though it were
+* *type* keyword lets you declare an alias of another type.
+* *as* keyword is used for scalar cast.
+* *transmute* it tells Rust to treat a value of one type as though it were
   another type. Is in std::mem::transmute. 
-* _transmute_ does very little checking, it will at least make sure that the
+* *transmute* does very little checking, it will at least make sure that the
   types are the same size.  
-* Prefer _type_ to Generics for _trait_ 'properties', _types_ inside _traits_ are called
+* Prefer *type* to Generics for *trait* 'properties', *types* inside *traits* are called
   associated types.
-* &Self can be used to refer the enclosing _trait_ and scope?.
-* _associated_ _types_ can implement other traits.  
-* For _trait_ object that has an associated type, they need to cast it to a
+* &Self can be used to refer the enclosing *trait* and scope?.
+* *associated types* can implement other traits.  
+* For *trait* object that has an associated type, they need to cast it to a
   boxed implementation for the trait.
 * Unsized types:
+
   1. We can only manipulate an instance of an unsized type via a pointer. An &
      [T] works just fine, but a [T] does not.    
   2. Variables and arguments cannot have dynamically sized types.    
   3. Only the last field in a struct may have a dynamically sized type; the
      other fields must not. Enum variants must not have dynamically sized types
      as data.
-* _?Sized_ can be used to accept dynamically sized types.
+     
+* *?Sized* can be used to accept dynamically sized types.
 * ::std::ops:: store operators, one can implement operators trait in order to
   overload it for the given type.
 * Deref can be used to overload the deference operator (*) and to implement
   automatic conversions thought  custom pointers implantation this is called
   'deref coercions'.
-* _macros_ can capture many patterns of code reuse that Rust’s core abstractions cannot.
-* Use "_macro_rules!_" to defined a new macro. macro_rules! <macro_name> { <impl> }.
-  * _macro_s use matching to define actions, the right hand of the matching is
+* *macros* can capture many patterns of code reuse that Rust’s core abstractions cannot.
+* Use "*macro_rules!*" to defined a new macro. macro_rules! <macro_name> { <impl> }.
+
+  + *macros* use matching to define actions, the right hand of the matching is
     ordinary Rust syntax.
-  * To write an expression with multiple statements, including let-bindings, we
+  + To write an expression with multiple statements, including let-bindings, we
     use a block. If your macro expands to a single expression, you don't need
     this extra layer of braces.
-  * Macro matches can be written for duplicated variables, so you could write a
+  + Macro matches can be written for duplicated variables, so you could write a
     matcher as $( $x:expr; [ $( $y:expr  ),*  ] );*
-  * $(...) * -> zero or more ; $(...)+ -> one or more;
-  * In Rust, meta-variables for macros are parsed as a single expression node.
-  * Each macro expansion happens in a distinct ‘syntax context’, and each
+  + $(...) * -> zero or more ; $(...)+ -> one or more;
+  + In Rust, meta-variables for macros are parsed as a single expression node.
+  + Each macro expansion happens in a distinct ‘syntax context’, and each
     variable is tagged with the syntax context where it was introduced.
-  * Therefore, macros can introduce new bindings.
-* The macro _try!_ can be used to error handling it returns std::io::Resut<T, E>.
+  + Therefore, macros can introduce new bindings.
+  
+* The macro *try!* can be used to error handling it returns std::io::Resut<T, E>.
