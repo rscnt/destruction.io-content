@@ -93,8 +93,8 @@ Rust
 * There is one case when a tuple struct is very useful, though, and that’s a tuple struct with only one element.
 
   * We call this the ‘newtype’ pattern, because it allows you to create a new
-     type, distinct from that of its contained value and expressing its own
-     semantic meaning
+    type, distinct from that of its contained value and expressing its own
+    semantic meaning
      
 * You should prefer struct to tuple structs.
 * Enums, defined multiple variants, you could Tuple structs, Structs, unit like structs, primitive types and so on...
