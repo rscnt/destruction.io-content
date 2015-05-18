@@ -138,12 +138,13 @@ Rust
 * *impl* keyword is used to call function with method syntax.
 * *trait* s are something like *interfaces* :
 
- * You call them like this impl TraitName for TypeName.
- * Generics arguments can be defined a trait with :, T: Trait.
- * Traits can implemented for any type 
- * To be used traits needs to be defined under the scope.
- * Either the trait or the type you're writing the impl for must be defined by you.
- * For multiple trait there's +.
+  * You call them like this impl TraitName for TypeName.
+  * Generics arguments can be defined a trait with :, T: Trait.
+  * Traits can implemented for any type 
+  * To be used traits needs to be defined under the scope.
+  * Either the trait or the type you're writing the impl for must be defined by you.
+  * For multiple trait there's +.
+
  * Prefer where when using multiple generics and traits.
    * *where* allows bounds where the left-hand side is an arbitrary type
  * You can have default methods!  (implement methods inside the trait
