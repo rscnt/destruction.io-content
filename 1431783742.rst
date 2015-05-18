@@ -105,7 +105,7 @@ Rust
     required, for example for integers, you have to set it.
   * *match* can be used to compare variants of  enums.
   
-   * You can use ranges(...), binding (@) and multiple (|) values with match.
+    + You can use ranges(...), binding (@) and multiple (|) values with match.
    
   * *match* can be conditional, you can use an 'if' after the value definition (Guard).
   
