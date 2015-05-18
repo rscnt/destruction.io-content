@@ -153,7 +153,7 @@ Rust
     declaration).
   * A trait can inherit other trait.
  
-   * When implementing on a type, both traits needs to be called.
+    * When implementing on a type, both traits needs to be called.
 
 * Values are deallocated from top to bottom. 
 * The trait Drop can be used to clean up stuff before the Type goes out of scope.
