@@ -108,8 +108,10 @@ Rust
   * The capital letters can be any letter we could like.
   * There can be generic enums, structs and functions.
 * _impl_ keyword is used to call function with method syntax.
-* _trait_s are something like _interfaces_
- * You call them like this impl TraitName for TypeName 
+
+* _trait_s are something like _interfaces_ :
+
+ * You call them like this impl TraitName for TypeName.
  * Generics arguments can be defined a trait with :, T: Trait.
  * Traits can implemented for any type 
  * To be used traits needs to be defined under the scope.
@@ -121,9 +123,84 @@ Rust
    declaration).
  * A trait can inherit other trait.
    * When implementing on a type, both traits needs to be called.
+
 * Values are deallocated from top to bottom. 
 * The trait Drop can be used to clean up stuff before the Type goes out of scope.
 * Combining if and let together to reduce the overhead of certain kinds of
   pattern matches, while can alsoe be combined with let.
-* Traits can be passed as arguments, erasing the need for a Type, this is called "Dynamic dispatch". fn(&TraitName).
-* 
+* Traits can be passed as arguments, erasing the need for a Type, this is
+  called "Dynamic dispatch". fn(&TraitName).
+* Closures starts  with two pipes | x | args go between them, multiline closures use braces {}.
+  * The concept of ownership also applies for closures.
+    * Keyword _move_, can be used to take ownership of a copy |  they give a
+      closure its own stack frame.
+    * Closures are traits, Fn<Args>(&self), FnMut<Args>(&mut self),
+      FnOnce<Args>(self), and like any trait they can be passed as arguments
+      to functions, rememer to use where to define the type of the _Args_.
+    * Dynamic dispatch can be achieved using _&_ in the definition of the
+      closure argument and when passing the closure. 
+    * In order to return closures, we need to return a reference of the trait.
+      ( -> &'static (Fn(i32) -> Vec<i32> ) ), without arguments there will be
+      no lifetime elision and references needs a lifetime, so we use 'static.
+    * Returned closures needs to be _Boxed_ (to give it a size) and _moved_ to
+      a new stack frame.
+* In order to return something from a function, Rust needs to know what size 
+  the return type is. 
+* References needs a lifetime.
+* We can call traits methods directly as _Trait::method(args) which is a
+  shorthand for <Type as Trait>::method(args);
+* 'crate'  -> package, library.
+* Declare modules in lib.rs, rust will expect a module_name.rs or module_name/mod.rs.
+* Everything is private by default, use 'pub' keyword.
+* By default, use declarations are absolute paths, starting from your crate
+  root. self makes that path relative to your current place in the hierarchy
+  instead. 
+* use: self ~= ., supper ~= ..
+* const must annotate their type. 
+* References to the same constant are not necessarily guaranteed to refer to
+  the same memory address  
+* Static items aren't inlined upon use. This means that there is only one
+  instance for each value, and it's at a fixed location in memory
+* Using mut static is _unsafe_. 
+* Attributes instructions for the compiler, #[] applies to the next item and
+  #![] applies to the enclosing item.
+* _type_ keyword lets you declare an alias of another type.
+* _as_ keyword is used for scalar cast.
+* _transmute_ it tells Rust to treat a value of one type as though it were
+  another type. Is in std::mem::transmute. 
+* _transmute_ does very little checking, it will at least make sure that the
+  types are the same size.  
+* Prefer _type_ to Generics for _trait_ 'properties', _types_ inside _traits_ are called
+  associated types.
+* &Self can be used to refer the enclosing _trait_ and scope?.
+* _associated_ _types_ can implement other traits.  
+* For _trait_ object that has an associated type, they need to cast it to a
+  boxed implementation for the trait.
+* Unsized types:
+  1. We can only manipulate an instance of an unsized type via a pointer. An &
+     [T] works just fine, but a [T] does not.    
+  2. Variables and arguments cannot have dynamically sized types.    
+  3. Only the last field in a struct may have a dynamically sized type; the
+     other fields must not. Enum variants must not have dynamically sized types
+     as data.
+* _?Sized_ can be used to accept dynamically sized types.
+* ::std::ops:: store operators, one can implement operators trait in order to
+  overload it for the given type.
+* Deref can be used to overload the deference operator (*) and to implement
+  automatic conversions thought  custom pointers implantation this is called
+  'deref coercions'.
+* _macros_ can capture many patterns of code reuse that Rust’s core abstractions cannot.
+* Use "_macro_rules!_" to defined a new macro. macro_rules! <macro_name> { <impl> }.
+  * _macro_s use matching to define actions, the right hand of the matching is
+    ordinary Rust syntax.
+  * To write an expression with multiple statements, including let-bindings, we
+    use a block. If your macro expands to a single expression, you don't need
+    this extra layer of braces.
+  * Macro matches can be written for duplicated variables, so you could write a
+    matcher as $( $x:expr; [ $( $y:expr  ),*  ] );*
+  * $(...) * -> zero or more ; $(...)+ -> one or more;
+  * In Rust, meta-variables for macros are parsed as a single expression node.
+  * Each macro expansion happens in a distinct ‘syntax context’, and each
+    variable is tagged with the syntax context where it was introduced.
+  * Therefore, macros can introduce new bindings.
+* The macro _try!_ can be used to error handling it returns std::io::Resut<T, E>.
