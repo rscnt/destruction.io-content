@@ -145,11 +145,13 @@ Rust
   * Either the trait or the type you're writing the impl for must be defined by you.
   * For multiple trait there's +.
 
- * Prefer where when using multiple generics and traits.
-   * *where* allows bounds where the left-hand side is an arbitrary type
- * You can have default methods!  (implement methods inside the trait
-   declaration).
- * A trait can inherit other trait.
+  * Prefer where when using multiple generics and traits.
+
+    + *where* allows bounds where the left-hand side is an arbitrary type
+
+  * You can have default methods!  (implement methods inside the trait
+    declaration).
+  * A trait can inherit other trait.
  
    * When implementing on a type, both traits needs to be called.
 
