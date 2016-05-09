@@ -1,0 +1,70 @@
+1462764439
+##########
+
+:date: 2016-05-08 21:27:19-06:00 
+:tags: journal 
+:category: notes
+:slug: 1462764439 
+:authors: Raul Ascencio
+
+I.A.
+  Algoritmos habilitados por *restricciones* expuestas
+  mediante representaciones que son compatibles con *modelos*
+  de percepción, pensamiento y acción.
+  Gran parte de nuestra inteligencia de debe al hecho que existen
+  circuitos/bucles que unifican la percepción, acción y pensamiento.
+
+*Generar y probar*
+  Generar posibles soluciones, probar cada una de ellas, la mayoría de resultados son fracasos
+  pero en algún momento podríamos obtener una solución correcta.
+  De ser posible cada generador debería ser:
+  - completo: producen todas las posibles soluciones.
+  - no redundante: no deberían proponer la misma solución dos veces.
+  - informado: utilizar su conocimiento para limitar el numero de soluciones a proponer.
+
+    *Once you can name something, you got power over it*.- `Rumplestilkin principle`_.
+
+    Una vez que puedes nombre algo, te vuelves consciente de ello. Tienes podre sobre eso.
+    Te pertenece. Lo controlas.-
+    `**The Joshua tree principle**`_
+
+- Simple != Trivial
+- Buena representación -> Casi terminado.
+
+Visión <-> Lenguaje
+
+
+1942 - 
+  - Ada Lovelace
+  
+1950 - Periodo de especulación
+  
+  - Alan Turing - *Turing test*
+
+1961 - *`Steps towards Artificial Intelligence`_*, Marvin Minsky
+
+
+1961 - *`Symbolic integrations`_*, James R. Slagle
+
+- 00
+
+  - Analogía geométrica
+  - Visión
+  - Aprendizaje.
+  - Sistemas expertos (bizs)
+
+2010 - ...
+
+  - `Imaginación`_
+  - Memoria visual.
+  - Cantidad ilimitada de inteligencia computacional.
+
+Todos los seres humanos nacen con la capacidad de aprender a describir objetos... `Noam Chomsky`_
+  
+
+.. _`Rumplestilkin principle`: http://slice.mit.edu/2009/08/16/the-rumpelstiltskin-principle/
+.. _`The Joshua tree principle`: https://familysearch.org/blog/en/the-joshua-tree-principle/
+.. _`Steps towards Artificial Intelligence`: http://web.media.mit.edu/~minsky/papers/steps.html
+.. _`Symbolic integrations`: https://chessprogramming.wikispaces.com/James+R.+Slagle
+.. _`Imaginación`: https://youtu.be/TjZBTDzGeGg?list=PLUl4u3cNGP63gFHB6xb-kVBiQHYe_4hSi&t=1755
+.. _`Noam Chomsky`: https://aggslanguage.wordpress.com/chomsky/
