@@ -1,5 +1,5 @@
 1431783742
-##############
+##########
 
 :date: 2015-05-16 07:42:22-06:00 
 :tags: journal 
@@ -8,8 +8,8 @@
 :authors: Raul Ascencio 
 
 
-Rust
-----
+**Rust**
+
 
 * *let* makes variable bindings.
 * *let* defines is a *pattern*.

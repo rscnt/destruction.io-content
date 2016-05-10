@@ -1,5 +1,5 @@
 1450542453
-##############
+##########
 
 :date: 2015-12-19 10:27:33-06:00 
 :tags: journal 
@@ -8,12 +8,10 @@
 :authors: Raul Ascencio 
 
 
-Advanced Data Structures
-########################
+**Advanced Data Structures**
 
 
-1. Resumen
-==========
+1. *Resumen*
 
 En esta primera lectura cubriremos los resultados en estructura de datos persistentes, las cuales matienen toda información sobre sus antiguos estados. Las estructuras de datos persistentes son parte de una larga clase de estructura de datos temporales. Existe otro tipo de estructura de datos temporales, estructuras de datos retroactivas (retroactive data structures), las cuales sera el tema de la segunda lectura.
 
@@ -25,11 +23,10 @@ Un tema frecuenta en esta area es que el modelo es crucial para los resultados.
 
 Parcial y completa persistencia corresponde al modelo de viaje temporal con un universo ramificado como el representado en Terminador, y Deja Vu parte 1 y 2.
 
-2. Modelo y definiciones
-========================
+2. *Modelos y definiciones*
 
-2.1 El modelo de mecanismo de punteros en estructuras de datos.
----------------------------------------------------------------
+
+2.1 *El modelo de mecanismo de punteros en estructuras de datos.*
 
 En este modelo pensamos sobres las estructuras de datos como colecciones de nodos con un tamaño limitado que poseen entradas para información. Cada pieza de información en un nodo puede ser información real, o un puntero hacia otro nodo.
 
@@ -45,13 +42,12 @@ Donde ``x``, ``y``, ``z`` son nombres asignados a nodos o campos dentro de las m
 
 Algunas estructuas de datos que permiten implementar esta forma y operaciones son las listas enlazadas, los arboles de busqueda binarios, y generalmente corresponde a ``struct`` en C o los objetos en Java. Un ejemplo de estructura de datos que no tiene cabida en este grupo podria ser una estructura de tamaño variable como lo es un arreglo.
 
-2.2 Definicion de persistencia
-------------------------------
+2.2 *Definicion de persistencia*
 
 Hasta ahora nos hemos referido vagamenta al concepto de persistencia como la habilidad de realizar consultas acerca de los estados pasados de una estructura. En este capitulo ofrecemos varias definiciones de lo que tratamos de dar a entender como persistencia.
 
-  1. *Persistencia parcial* - En este modelo de persistencia podriamos hacer consultas de cualquiera de los ultimos estados de una estructura de datos, pero solo podriamos actualizar el ultimo estado. Tendriamos a nuestra dispocicion las operaciones ``leer(var, versión)`` y ``newversion = guardar(var, valor)``. Esta deficion implica que la versiones tienen un orden lineal, como se muestra en la figura **1a**.
+1. **Persistencia parcial** - En este modelo de persistencia podriamos hacer consultas de cualquiera de los ultimos estados de una estructura de datos, pero solo podriamos actualizar el ultimo estado. Tendriamos a nuestra dispocicion las operaciones ``leer(var, versión)`` y ``newversion = guardar(var, valor)``. Esta deficion implica que la versiones tienen un orden lineal, como se muestra en la figura **1a**.
 
-  2. *Persistencia completa* - Bajo este modelo, se permita actualizar y consultar cualquier version de la estructura de datos. Disponemos de operaciones ``leer(var, versión)`` y ``newversion = guardar(var, versión, valor)``. Las versiones forman un árbol con varias ramificaciones, como se muestra en la figura **1b**.
+2. **Persistencia completa** - Bajo este modelo, se permita actualizar y consultar cualquier version de la estructura de datos. Disponemos de operaciones ``leer(var, versión)`` y ``nuevaversion = guardar(var, versión, valor)``. Las versiones forman un árbol con varias ramificaciones.
 
-  3. *Persistencia confluente* - En este modelo, en adicion a la operacion previa... 
+3. **Persistencia confluente** - En este modelo, en adicion a la operacion previa... 
