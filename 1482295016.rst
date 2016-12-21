@@ -1,0 +1,75 @@
+1482295016
+##############
+
+:date: 2016-12-20 22:36:56-06:00 
+:tags: journal 
+:category: journal 
+:slug: 1482295016 
+:authors: Raul Ascencio 
+
+
+Notes of `THE SOCIAL NETWORK AND ATTACHMENT BASES OF LONELINESS`_
+
+  Weiss suggested that it is not enough to love and to be loved by an
+  individual—the antidote to emotional loneliness—but one also needs to be a part
+  of a meaningful social group.
+
+  In 1974, Weiss elaborated on his idea of two types of loneliness. Because his
+  theory suggests loneliness arises from relational deficits, it implies that
+  relationships make certain provisions.
+
+
+`The urban animal, population density and social pathology in rodents and
+humans`_
+
+Calhoun first experiments where influential at the time, but the fact that the
+main focus of it was "crowding equals chaos event with enough resources" led the
+discussion to the wrong path, avoiding that many of his later work, like
+Theories of human crowding, didn't receive the amount of attention it deserved.
+
+`Theories Of Human Crowding`_
+
+
+    Ethological perspective Theories of temporary street crowds Comprehensive
+    models Limited conceptualizations
+
+Ethological perspective
+
+(Calhoun, 1966) Group size, rather than density, is an important factor in
+crowding; overcrowding is really a problem of too much social contact; space is
+both physical and conceptual in man, meaning that man has a cognitive way out of
+his overcrowding problems.
+
+Changes occurring after prolonged exposure to high density also include
+inhibition of antibody production, inhibition of reproduction functions,
+increase in blood pressure, interference with growth, increased mortality rates,
+and premature senility (Davis, 1971). Davis has suggested that the term
+'crowding' is misleading since crowding per se does not produce stress, only
+high levels of stimulation do.
+
+It follows that stress can be reduced by community reorganization into small
+subgroups; this would cut down interaction rate and aid social organization.
+Suggesting applications to man, Davis emphasizes the beneficial effects of
+social ordering devices (for example, hierarchical structures) for this
+purpose...
+
+but a problem with the theory is that stress is a difficult thing to measure in
+humans, making the theory difficult to test on man.
+
+man, in fact, has developed a wide variety of contraceptive devices; their
+failure to be adopted on a large-scale basis may be better explained in terms of
+cultural values and beliefs, factors which Lorenz (1969) does not fully explore.
+
+Leyhausen (1965), the men who watched cats... two kids of hierarchy, absolute
+and relative (dominance and social priority depending on geographic location
+[?]), hierarchy form depends on density: the more crowded the area, the more
+absolute the hierarchy... some of the more crowded countries of the world are
+democratically organized.
+
+Theories that are under the ethological perspective, tends to oversimplify the
+human behavior, by no taking into the account their ability to adapt and vast
+differences between individuals. Temporary street crowds
+
+.. _THE SOCIAL NETWORK AND ATTACHMENT BASES OF LONELINESS: http://scholarscompass.vcu.edu/cgi/viewcontent.cgi?article=1948&context=etd
+.. _The urban animal, population density and social pathology in rodents and humans: http://who.int/bulletin/volumes/87/2/09-062836/en/
+.. _`Theories Of Human Crowding`: http://journals.sagepub.com/doi/pdf/10.1068/a091211
