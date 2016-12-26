@@ -1,0 +1,52 @@
+1482721379
+##############
+
+:date: 2016-12-25 21:02:59-06:00 
+:tags: journal 
+:category: journal 
+:slug: 1482721379 
+:authors: Raul Ascencio 
+
+A list of sites, with puzzles and enough information
+to implement them.
+
++ http://erikdemaine.org/games/
++ https://nbpuzzles.wordpress.com/
++ http://logicmastersindia.com/home/
++ http://tchow.com/games/
+
+`Quantified self`_, contains a lot of interesting talks and papers, with a lot
+of interesting ideas. I've been tracking basic things like tasks, expenses and
+incomes for quite a while, it has been quite useful, but that data is
+self-hosted, for accounting, everything is stored in plain text, using `ledger`_
+and tasks are also being stored in plain text using `org-mode`_, everything is
+hosted in a couple of private git repository.
+
+Tracking more data than the absolute necessary (except for `music`_), seemed a
+little bit silly, considering that the information will probably be stored by a
+third-party, but things like measuring one's own mood, could be quite
+beneficial, at least that it's the impression that I get after having
+read/listen, `this`_ `, this`_ `and this`_.
+
+I will be using moodscope, it suggest that you should have a "buddy", to whom
+you should be held accountable, and should also provide feedback, however, I
+prefer to make the chart public, it should serve for the same propose.
+
+.. image:: http://minio.destruction.io/moodscope/moodscope-graph-at-December-2016.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=rscnt.minio%2F20161226%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20161226T002524Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=35473d39e7358c3b111dd84f074932ec8d3a971d9fbc33b66506a85f41eb8dee
+   :scale: 100 %
+   :width: 100 %
+   :alt: 2016-12-25 moodscope chart
+  
+
+Using `Rescuetime`_, to track the time spent on all applications should throw
+interesting results...
+
+
+.. _Quantified self: http://quantifiedself.com/about/
+.. _ledger: http://ledger-cli.org/
+.. _org-mode: http://orgmode.org/
+.. _music: http://www.last.fm/user/r_94
+.. _this: https://www.moodscope.com/files/Moodscope_Research.pdf
+.. _, this: http://quantifiedself.com/2013/01/how-to-measure-mood-using-quantified-self-tools/
+.. _and this: http://quantifiedself.com/2010/11/jon-cousins-on-moodscope/
+.. _Rescuetime: https://www.rescuetime.com/
