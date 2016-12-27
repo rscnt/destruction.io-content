@@ -1,0 +1,17 @@
+1482814721
+##############
+
+:date: 2016-12-26 22:58:41-06:00 
+:tags: journal 
+:category: journal 
+:slug: 1482814721 
+:authors: Raul Ascencio 
+
+41%
+
+.. image:: http://minio.destruction.io/moodscope/moodscope-graph-at-26-December-2016.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=rscnt.minio%2F20161227%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20161227T045946Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=f488be09034a2043794a93f623ef65204cd9284c485f3976e24351fe5e30a055
+   :scale: 100 %
+   :width: 100 %
+   :alt: 2016-12-26 moodscope chart
+
+      
