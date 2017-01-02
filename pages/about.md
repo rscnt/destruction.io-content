@@ -1,4 +1,5 @@
-Title: About 
+Title: ∵
+Slug: about
 Date: 2015-03-21
 
 + A personal website, contains a series of articles and few pages.

@@ -1,0 +1,122 @@
+1483284324
+##############
+
+:date: 2017-01-01 09:25:24-06:00 
+:tags: journal 
+:category: journal 
+:slug: 1483284324 
+:authors: Raul Ascencio 
+
+
+Quantified self.
+================
+
+Tracking what I've listened [#]_ and read [#]_ over the past couple of years has
+been pretty useless, but after reading to some articles on
+`quantifiedself.com`_, it became clear that a lot of stuff was being overlooked
+that and a bunch of private data (like accounting info or TODO's list) could be
+used to find patterns and become more aware of *my own self*.
+
+Building an application that could help me to visualise and correlate most of
+the recollected data is something that I look to be working on, it could be
+pretty interesting to know if my productivity goes up when while listening to an
+specific genre, if my mood is better when there are less or more expenses... it
+might be useless but it's worth the try, plus making retrospectives would be
+easier and will provide tools to have a better insight on what to do if/when shit
+hit the fan.
+
+Books & Courses
+================
+
+#. `Introduction to Mathematical Thinking`_  ⇝ 8 weeks. 26.02.2017
+
+   It aims to teach essential logic and develop analytic thinking, doesn't seem
+   to ask for much background [#]_.
+
+#. `MIT6.006F11`_ ⇝ 12 weeks. 14.05.2017 & `MIT6.851`_ ⇝ 27.08.2017 
+
+   Again... but this time without interruptions, given that my *career* depends
+   on this. 
+
+#. `Statistics: Making Sense of Data`_	⇝ 8 weeks. 02.07.2017
+   
+   Didn't finished it last year, hopefully will be finished in the next six months.
+
+#. `Bounded Rationality: The Adaptive Toolbox`_ & `Modeling Bounded Rationality`_
+
+   Because... it reinforce the idea that *shit* is casually determined or not, 
+
+#. `Evolution of the Social Contract`_
+
+   *It's evolution, baby* [#]_, it might be a good introduction to game theory.
+
+
+One paper/article/essay a week.
+===============================
+
+Inspired by `the morning paper`_, which publish a "short summary of an paper in
+the field of CS every week day" [#]_, there will be a new article with a synopsis
+of an article, paper or essay of my interest every week.
+
+The first set of papers for the next three months are:
+
+#. `The Time Famine: Toward a Sociology of Work Time`_, by Leslie A. Perlow
+
+   After reading `Carrie Cai`_ on `wait-learning`_, it became clear that there
+   were ways to take advantage of the time already considered "dead", and use it
+   to learn something, or at least pretend to be learning something.
+
+#. `Coin-Moving Puzzles`_ && `Pushing Blocks`_
+#. `Chain Reactions: The Impact of Order on Microtask Chains`_
+#. `Solitaire Clobber`_
+#. `Population Density, Social Pathology, and Behavioral Ecology`_, by Jim Moore.
+#. `Playing with Triangulations`_
+#. `‘Utilitarian’ judgments in sacrificial moral dilemmas do not reflect impartial concern for the greater good`_
+#. `Data Structures for Strings`_
+#. `Theories Of Human Crowding`_, by J J Edney
+#. `The Nondeterministic Constraint Logic Model of Computation: Reductions and Applications`_
+#. `Strategies of Human Mating`_, by David M. Buss.
+#. `Advogato's Trust Metric`_ && `The math of CSS locks`_
+#. `Rust Collections Case Study: BTreeMap`_, by Alexis Beingessner
+
+------------
+
+.. [#] http://www.last.fm/user/r_94
+.. [#] https://www.goodreads.com/user/show/27385531-raul
+.. [#] http://devlinsangle.blogspot.com/2012/08/what-is-mathematical-thinking.html
+.. [#] https://www.youtube.com/watch?v=aDaOgu2CQtI
+.. [#] https://blog.acolyer.org/about/
+
+
+.. _`Population Density, Social Pathology, and Behavioral Ecology`: http://pages.ucsd.edu/~jmoore/publications/DensityInfanticide.html
+.. _`The Time Famine: Toward a Sociology of Work Time`: http://www.hbs.edu/faculty/Pages/item.aspx?num=5455
+.. _`Carrie Cai`: http://people.csail.mit.edu/ccai/index.html
+.. _`wait-learning`: http://people.csail.mit.edu/ccai/publications/Cai_WaitLearningDC
+.. _`Strategies of Human Mating`: http://www.weimag.ch/micha/dc/05_Buss_Strategies%20of%20Human%20Mating.pdf
+.. _`‘Utilitarian’ judgments in sacrificial moral dilemmas do not reflect impartial concern for the greater good`: http://www.sciencedirect.com/science/article/pii/S0010027714002054
+.. _`Theories Of Human Crowding`: http://journals.sagepub.com/doi/pdf/10.1068/a091211
+.. _`Data Structures for Strings`: http://cglab.ca/~morin/teaching/5408/notes/strings.pdf
+.. _`Advogato's Trust Metric`: http://www.advogato.org/trust-metric.html
+.. _`The math of CSS locks`: https://fvsch.com/code/css-locks/
+.. _`Rust Collections Case Study: BTreeMap`: http://cglab.ca/~abeinges/blah/rust-btree-case/
+.. _`Coin-Moving Puzzles`: https://arxiv.org/abs/cs/0204002
+.. _`Pushing Blocks`: http://erikdemaine.org/pushingblocks/
+.. _`Solitaire Clobber`: http://erikdemaine.org/papers/Clobber_TCS/
+.. _`Playing with Triangulations`: http://erikdemaine.org/papers/TriangulationGames_JCDCG2002/
+.. _`The Nondeterministic Constraint Logic Model of Computation: Reductions and Applications`: http://erikdemaine.org/papers/NCL_ICALP2002/
+.. _`Chain Reactions: The Impact of Order on Microtask Chains`: http://people.csail.mit.edu/ccai/publications/Cai_ChainReactions.pdf
+
+
+.. _`the morning paper`: https://blog.acolyer.org/
+.. _`quantifiedself.com`: http://quantifiedself.com/
+
+
+.. _`Evolution of the Social Contract`: https://www.goodreads.com/book/show/87646.Evolution_of_the_Social_Contract
+.. _`Bounded Rationality: The Adaptive Toolbox`: https://www.goodreads.com/book/show/786563.Bounded_Rationality?from_search=true
+.. _`Modeling Bounded Rationality`: https://www.goodreads.com/book/show/232819.Modeling_Bounded_Rationality?from_search=true
+
+.. _`Statistics: Making Sense of Data`: http://academictorrents.com/details/a0cbaf3e03e0893085b6fbdc97cb6220896dddf2
+.. _`Introduction to Mathematical Thinking`: https://www.coursera.org/learn/mathematical-thinking 
+
+.. _`MIT6.006F11`: http://academictorrents.com/details/831041a9411abc5d9c4d58e38ae40e550f8455a1/tech&hit=1&filelist=1
+.. _`MIT6.851`: http://courses.csail.mit.edu/6.851/spring12/

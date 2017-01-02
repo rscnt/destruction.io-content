@@ -1,14 +1,21 @@
-STATS
-######                                                              
+∝
+###                                                              
 
 :date: 2016-12-28 23:10
 :slug: stats
 :summary: stats table.
 
+
 .. class:: table table-bordered
 
 +--------------------+--------------------+--------------------+--------------------+
 |   **Timestamp**    |     **Image**      |     **Score**      |  **Productivity**  |
++--------------------+--------------------+--------------------+--------------------+
+|     1483324846     |  |1483324846.jpg|  |        16%         |      0% (0h)       |
++--------------------+--------------------+--------------------+--------------------+
+|     1483235747     |  |1483235747.jpg|  |        17%         |      38% (6h)      |
++--------------------+--------------------+--------------------+--------------------+
+|     1483168828     |  |1483168828.jpg|  |        25%         |      61% (5h)      |
 +--------------------+--------------------+--------------------+--------------------+
 |     1482984538     |  |1482984538.jpg|  |        23%         |     65% (11h)      |
 +--------------------+--------------------+--------------------+--------------------+
@@ -35,4 +42,18 @@ STATS
    :scale: 100 %
    :width: 100 %
 
+.. |1483168828.jpg| image:: http://minio.destruction.io/moodscope/moodscope-graph-at-December-30-2016.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=rscnt.minio%2F20161231%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20161231T072418Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=14ea451ecb79bbac524ae2f343f18666c0cba7251a165996f97669d14ebe4dca
+   :scale: 100 %
+   :width: 100 %
+
+.. |1483235747.jpg| image:: http://minio.destruction.io/moodscope/moodscope-graph-at-December-31-2016.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=rscnt.minio%2F20170101%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20170101T015721Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=5c430a3f5703c6c0301cfee11a93fd44d9e52a352954f02c852716769fcc4ef0
+   :scale: 100 %
+   :width: 100 %
+
+.. |1483324846.jpg| image:: http://minio.destruction.io/moodscope/moodscope-graph-at-1-January-2017.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=rscnt.minio%2F20170102%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20170102T024204Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=325e70867a48ed896c850fce4984e9300d7e82e5d11a25d80db3146ba05d4d12
+   :scale: 100 %
+   :width: 100 %
+           
 ..  LocalWords:  Timestamp
+
+
