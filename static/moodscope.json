@@ -1,0 +1,79 @@
+{
+  "cols": [
+        {"id":"date","label":"date","pattern":"","type":"date"},
+        {"id":"mood","label":"mood","pattern":"","type":"number"},
+        {"id":"prod","label":"prod","pattern":"","type":"number"}
+      ],
+  "rows": [
+    {"c":[
+      {"v":"Date(2016, 12, 26)","f":null},
+      {"v":33,"f":null},
+      {"v":0,"f":null}
+    ]},
+    {"c":[
+      {"v":"Date(2016, 12, 27)","f":null},
+      {"v":41,"f":null},
+      {"v":52,"f":null}
+    ]},
+    {"c":[
+      {"v":"Date(2016, 12, 28)","f":null},
+      {"v":44,"f":null},
+      {"v":35,"f":null}
+    ]},
+    {"c":[
+      {"v":"Date(2016, 12, 29)","f":null},
+      {"v":23,"f":null},
+      {"v":65,"f":null}
+    ]},
+    {"c":[
+      {"v":"Date(2016, 12, 30)","f":null},
+      {"v":25,"f":null},
+      {"v":61,"f":null}
+    ]},
+    {"c":[
+      {"v":"Date(2016, 12, 31)","f":null},
+      {"v":17,"f":null},
+      {"v":38,"f":null}
+    ]},
+    {"c":[
+      {"v":"Date(2017, 01, 01)","f":null},
+      {"v":16,"f":null},
+      {"v":0,"f":null}
+    ]},
+    {"c":[
+      {"v":"Date(2017, 01, 02)","f":null},
+      {"v":37,"f":null},
+      {"v":70,"f":null}
+    ]},
+    {"c":[
+      {"v":"Date(2017, 01, 03)","f":null},
+      {"v":32,"f":null},
+      {"v":58,"f":null}
+    ]},
+    {"c":[
+      {"v":"Date(2017, 01, 04)","f":null},
+      {"v":20,"f":null},
+      {"v":63,"f":null}
+    ]},
+    {"c":[
+      {"v":"Date(2017, 01, 10)","f":null},
+      {"v":38,"f":null},
+      {"v":55,"f":null}
+    ]},
+    {"c":[
+      {"v":"Date(2017, 01, 11)","f":null},
+      {"v":31,"f":null},
+      {"v":57,"f":null}
+    ]},
+    {"c":[
+      {"v":"Date(2017, 01, 14)","f":null},
+      {"v":27,"f":null},
+      {"v":30,"f":null}
+    ]},
+    {"c":[
+      {"v":"Date(2017, 01, 14)","f":null},
+      {"v":34,"f":null},
+      {"v":0,"f":null}
+    ]}
+  ]
+}
